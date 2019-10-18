@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class movescript : MonoBehaviour
+public class move_script : MonoBehaviour
 {
     Rigidbody2D rb2d;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         var mouseDir = mousePos - gameObject.transform.position;
