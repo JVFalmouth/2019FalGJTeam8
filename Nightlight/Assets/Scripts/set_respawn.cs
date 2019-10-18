@@ -6,6 +6,9 @@ public class set_respawn : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        other.GetComponent<fear_script>().respawn = gameObject.transform.position;
+        if ("Bat_PH" == other.gameObject.name)
+        {
+            other.GetComponent<fear_script>().respawn = gameObject.transform.position;
+        }
     }
 }

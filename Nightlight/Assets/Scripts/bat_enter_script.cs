@@ -6,10 +6,16 @@ public class bat_enter_script : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        other.GetComponent<fear_script>().isTouchingLight = true;
+        if ("Bat_PH" == other.gameObject.name)
+        {
+            other.GetComponent<fear_script>().isTouchingLight = true;
+        }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        other.GetComponent<fear_script>().isTouchingLight = false;
+        if ("Bat_PH" == other.gameObject.name)
+        {
+            other.GetComponent<fear_script>().isTouchingLight = false;
+        }
     }
 }

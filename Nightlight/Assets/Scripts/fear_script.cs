@@ -13,7 +13,6 @@ public class fear_script : MonoBehaviour
     private void Start()
     {
         respawn = new Vector3(0f, 0f);
-        Debug.Log("boi");
     }
 
     private void Update()
@@ -30,7 +29,6 @@ public class fear_script : MonoBehaviour
         if (fear == 0 && !isTouchingLight)
         {
             gameObject.transform.position = respawn;
-            Debug.Log("boi2 electric boogaloo");
         }
     }
 }
