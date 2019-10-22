@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class fear_script : MonoBehaviour
 {
     [Range(0, 1000)]
     public int fear = 1000;
     public bool isTouchingLight;
-
     public Vector3 respawn;
+    public Slider BraveryMeter;
 
     private void Start()
     {
@@ -17,6 +18,7 @@ public class fear_script : MonoBehaviour
 
     private void Update()
     {
+        BraveryMeter.value = fear;
         if (isTouchingLight && fear < 1000)
         {
             fear += 5;
