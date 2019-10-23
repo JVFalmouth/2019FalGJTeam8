@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 61911381732682562}
   - component: {fileID: 61911381732682565}
   m_Layer: 0
-  m_Name: Bat (Placeholder)
-  m_TagString: Untagged
+  m_Name: Bat_PH
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
